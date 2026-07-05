@@ -2,7 +2,7 @@
 
 A hands-on learning project exploring multi-agent orchestration patterns using LangGraph, LangChain, and OpenAI.
 
-## Key Learning Objectives
+## Objectives
 
 - Understand the core concepts of LangGraph including nodes, edges, and state management for building agent workflows
 - Design and implement multi-agent orchestration patterns such as supervisor, hierarchical, and collaborative topologies
