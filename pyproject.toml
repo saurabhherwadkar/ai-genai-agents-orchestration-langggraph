@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "ai-genai-agents-orchestration-langgraph"
+version = "0.1.0"
+description = "A learning portfolio project exploring multi-agent orchestration patterns using LangGraph"
+authors = ["Saurabh Herwadkar"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.14"
+langgraph = "^0.4"
+langchain = "^0.3"
+langchain-openai = "^0.3"
+langchain-community = "^0.3"
+langchain-core = "^0.3"
+langsmith = "^0.3"
+openai = "^1.82"
+python-dotenv = "^1.1"
+pydantic = "^2.11"
+httpx = "^0.28"
+tavily-python = "^0.5"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
+pytest-asyncio = "^1.0"
+ruff = "^0.11"
+mypy = "^1.15"
+ipykernel = "^6.29"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
